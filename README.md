@@ -1,4 +1,5 @@
-# This page contains a list of everything in this repo !!
+# Education
+## All available contents:
 
 - Mathematics
   - [Number System](mathematics/number_system/start.md)
