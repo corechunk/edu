@@ -99,3 +99,7 @@ Here “1” in ten’s place means different than in one's place.
 
 - [More Positional Number Systems](positional_ns/types.md)
 - [Conversion of Positional Number Systems](positional_ns/conversion.md)
+- [Binary Arithmetic](positional_ns/arithmetic.md)
+- [1's & 2's compliment in binary [ Computer Science ] part-1]()
+- [signed & unsigned numbers [ Computer Science ]]()
+- [1's & 2's compliment in binary [ Computer Science ] part-2]()

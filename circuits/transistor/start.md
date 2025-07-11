@@ -58,7 +58,8 @@ When a voltage is applied, electrons move towards the positive side, and holes m
 
 ---
 
-## What happens when we put one type of semiconductor between two others of the same type? (e.g. n-p-n or p-n-p)
+## Structure
+What happens when we put one type of semiconductor between two others of the same type? (e.g. n-p-n or p-n-p)
 
 If you arrange the layers as n-p-n or p-n-p, you create a structure where the middle layer is different from the outer layers.  
 
