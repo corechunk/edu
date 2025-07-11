@@ -14,7 +14,7 @@ A **semiconductor** is a material that can sometimes **conduct electricity** and
 ### Silicon:
 <div style="display: flex; gap: 10px; width: 100%;">
   <img src="si.jpg" alt="Silicon crystal" style="width: 100%; max-width: 500px; object-fit: contain;"/>
-  <img src="silicon2.jpg" alt="Silicon sample" style="width: 100%; max-width: 500px; object-fit: contain;"/>
+  <img src="silicon.jpg" alt="Silicon sample" style="width: 100%; max-width: 500px; object-fit: contain;"/>
 </div>
 
 `It does not let electricity flow as easily as a metal, but it is not as resistant as an insulator.`
