@@ -37,13 +37,13 @@ Depending on the type of atom added, the semiconductor becomes either:
 
 In n-type semiconductors, the added atoms provide extra electrons, which are the main charge carriers.
 
-![image](n_type.jpg)
+<img src="n_type.jpg" alt="Silicon crystal" style="width: 500px; object-fit: contain;"/>
 
 ## p-type
 
 In p-type semiconductors, the added atoms create holes, and these holes act as the main charge carriers.
 
-![image](p_type.jpg)
+<img src="p_type.jpg" alt="Silicon crystal" style="width: 500px; object-fit: contain;"/>
 
 ### What actually lets the electricity flow?
 
