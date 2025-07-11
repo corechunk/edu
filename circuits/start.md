@@ -6,11 +6,11 @@ A progressive, step-by-step curriculum to learn digital circuits, build a simple
 in this section we will learn from transistors to gates --> cpu components(e.g. alu, register etc.) --> cpu.
 
 ## Topic Index
-- Introduction to Digital Systems
+- ### 1. Introduction to Digital Systems
   - Voltage, current, analog vs. digital signals
   - Role of digital circuits in computing
   - Simulation tools: Logisim, Verilog
-- [Transistor](transistor/start.md)
+- ### 2. [Transistor](transistor/start.md)
   - [Definition](transistor/start.md#definition)
   - [Semi-conductor](transistor/start.md#what-is-a-semi-conductor)
   - [Conductivity boosting](transistor/start.md#conductivity-boosting)
@@ -20,204 +20,153 @@ in this section we will learn from transistors to gates --> cpu components(e.g. 
     - [flow](transistor/start.md#flow)
     - [gate](transistor/start.md#gate)
     - [depletion layer](transistor/start.md#depletion-layer)
-  - [Components]()
-  - Transistor as switch, simple memory cell etc.
-- Logic gates
-  - simple gates: or,not,and
-    - definitions
-  - Integrated Circuit (IC)
+  - [Components](transistor/start.md#components)
+  - [Transistor as switch](transistor/start.md#transistor-as-switch)
+- ### 3. [Logic Gates: The Brains of Digital Circuits](gate/start.md)
   - complex gates: nor, nand, xor, xnor
-- boolean algebra
-  - de morgan law and etc
+  - AND, OR, NOT (definitions, truth tables)
+  - Universal gates: NAND, NOR
+  - Integrated Circuits (ICs)
+  - Complex gates: XOR, XNOR
+  - Optimization: Karnaugh Maps
+  - Sequential logic: SR, D flip-flops
+  
+- ### 4. Boolean algebra
+  - De Morgan’s Law, simplification
+  - Applying Boolean algebra to circuit design
 
-- complex circuits
+
+- ### 5. complex circuits
   - adder
     - Half adder
     - full adder
     - Binary adder
       - RCA - Ripple Carry Adder
       - CLA - Carry Look Ahead Adder
-  - etc
-  - multiplexer
-  - encoder
-  - decoder
+  - substractor, comparators
+  - multiplexer, demultiplexer
+  - encoder, decoder
+  - Memory elements: latches, SRAM basics
+  - Finite State Machines: state diagrams
 
-- Cpu Components
+- ### 6. **CPU Components: Basics**
   - ALU
   - Register
-  - Counter
+    - Store/transfer data (e.g., 4-bit register)
+  - Program Counter (PC)
+    - Store instruction address
+    - Increment for sequential execution
   - Clock
+    - Role in synchronous circuits
+    - Clock signals, timing
   - Control Unit
+  - Instruction Memory
+    - Store instructions (ROM basics)
+    - Fetch using PC
 
-
-
-
-
-
-
-
-
-
-## 3. Logic Gates
-- AND, OR, NOT (definitions, truth tables)
-- Universal gates: NAND, NOR
-- Complex gates: XOR, XNOR
-- Integrated Circuits (ICs)
-- Optimization: Karnaugh Maps
-- Sequential logic: SR, D flip-flops
-
-## 4. Boolean Algebra
-- De Morgan’s Law, simplification
-- Applying Boolean algebra to circuit design
-
-## 5. Complex Circuits
-- Half adder, full adder, ripple carry adder (RCA)
-- Subtractors, comparators
-- Multiplexers, demultiplexers
-- Encoders, decoders
-- Memory elements: latches, SRAM basics
-- Finite State Machines: state diagrams
-
-## 6. CPU Components: Basics
-- **Arithmetic Logic Unit (ALU)**
-  - Design for add, subtract, AND, OR
-  - Truth tables, gate-level design
-- **Registers**
-  - Store/transfer data (e.g., 4-bit register)
-  - Register file basics
-- **Clock**
-  - Role in synchronous circuits
-  - Clock signals, timing
-- **Program Counter (PC)**
-  - Store instruction address
-  - Increment for sequential execution
-- **Instruction Memory**
-  - Store instructions (ROM basics)
-  - Fetch using PC
-
-## 7. Building a Simple CPU (Harvard Architecture)
-- **Harvard Architecture Overview**
-  - Separate instruction/data memory
-  - Contrast with Von Neumann
-- **Instruction Fetch**
-  - Fetch from instruction memory using PC
-  - Project: Simulate fetch in Logisim
-- **Instruction Decode**
-  - Decode to control signals
-  - Control unit basics (hardwired)
-- **Execute Cycle**
-  - ALU operation, store result in register
-- **Simple CPU Design**
-  - Combine PC, instruction memory, ALU, registers, control unit
-  - Project: Build 8-bit Harvard CPU (add, load, store instructions)
-
-## 8. CPU Components: Intermediate
-- **Control Unit (Detailed)**
-  - Parse opcode, operands
-  - Generate control signals (e.g., ALU select, register write)
-- **Data Memory**
-  - Load/store data
-  - Memory addressing
-- **Bus System**
-  - Address, data, control buses
-  - Data transfer
-- **Instruction Set Architecture (ISA)**
-  - Simple ISA (load, store, add, jump)
-  - Write basic assembly programs
-- **Branching**
-  - Conditional jumps (e.g., jump if zero)
-  - Update PC for control flow
-  - Project: Add branching to CPU
-
-## 9. CPU Enhancements: Early Advancements
-- **Multi-Cycle CPU**
-  - Fetch-decode-execute in multiple cycles
-  - Contrast with single-cycle
-- **Interrupts**
-  - Handle hardware/software events
-  - Save/restore PC, registers
-- **Memory Hierarchy**
-  - Cache basics (L1, hit/miss)
-  - Main memory interaction
-- **Stack Operations**
-  - Push/pop for function calls
-  - Stack pointer, memory
-  - Project: Add interrupts, stack to CPU
-
-## 10. CPU Enhancements: Pipelining
-- **Basic Pipelining**
-  - Fetch, decode, execute stages
-  - Increase throughput
-- **Pipeline Hazards**
-  - Data hazards (read-after-write)
-  - Control hazards (branches)
-  - Structural hazards
-- **Hazard Mitigation**
-  - Stalling, forwarding
-  - Project: Simulate 3-stage pipeline
-
-## 11. CPU Enhancements: Modern Features
-- **Branch Prediction**
-  - Static prediction (always taken)
-  - Dynamic prediction (2-bit predictor)
-  - Branch target buffer (BTB)
-- **Superscalar Architecture**
-  - Multiple instructions per cycle
-  - Parallel ALUs
-- **Out-of-Order Execution**
-  - Reorder instructions
-  - Reorder buffer
-- **Speculative Execution**
-  - Execute before branch resolution
-  - Rollback on misprediction
-- **Cache Coherence**
-  - Multi-core memory consistency
-  - MESI protocol basics
-- **Project**
-  - Add branch prediction
-  - Simulate superscalar execution
-
-## 12. Advanced CPU Architectures
-- **RISC vs. CISC**
-  - ARM (RISC) vs. x86 (CISC)
-  - Trade-offs
-- **Multi-Core CPUs**
-  - Shared/distributed memory
-  - Inter-core communication
-- **Vector Processing**
-  - SIMD (Single Instruction, Multiple Data)
-  - Graphics/AI applications
-- **Power Management**
-  - Dynamic voltage scaling
-  - Clock gating
-- **Project**
-  - Simulate dual-core CPU
-  - Add SIMD instructions
-
-## 13. Hands-On Learning
-- Tools: Logisim, Verilog, FPGA basics
-- Projects:
-  - 4-bit adder, ALU, 8-bit Harvard CPU
-  - Add branching, interrupts, pipelining
-  - Simulate branch prediction, multi-core
-- Applications: CPUs in AI (TPUs), mobile devices
-- Debugging: testbenches, error detection
-
-## 14. Circuits in Context
-- CPU-OS interaction (interrupts, privilege levels)
-- Assembly programming for CPU testing
-- Circuits in networking (routers)
-- Role in systems: SoC, GPU basics
-
----
-
-### Progression
-- **Weeks 1–2**: Learn transistors, gates, build adder (Logisim).
-- **Weeks 3–4**: Design flip-flops, memory elements, FSMs.
-- **Month 2**: Build 8-bit Harvard CPU (fetch, decode, execute).
-- **Month 3**: Add branching, interrupts, stack.
-- **Month 4**: Implement pipelining, mitigate hazards.
-- **Months 5–6**: Add branch prediction, superscalar, multi-core.
-- **Month 7**: Explore RISC/CISC, SIMD, power management.
-
-This curriculum takes you from basics to a simple CPU, then progressively adds functionalities (fetch, branching, pipelining, branch prediction), culminating in modern CPU concepts, with hands-on projects at each step.
+- ### 7. **Building a Simple CPU (Harvard Architecture)**
+  - **Harvard Architecture Overview**
+    - Separate instruction/data memory
+    - Contrast with Von Neumann
+  - **Instruction Fetch**
+    - Fetch from instruction memory using PC
+    - Project: Simulate fetch in Logisim
+  - **Instruction Decode**
+    - Decode to control signals
+    - Control unit basics (hardwired)
+  - **Execute Cycle**
+    - ALU operation, store result in register
+  - **Simple CPU Design**
+    - Combine PC, instruction memory, ALU, registers, control unit
+    - Project: Build 8-bit Harvard CPU (add, load, store instructions)
+- ### 8. **CPU Components: Intermediate**
+  - **Control Unit (Detailed)**
+    - Parse opcode, operands
+    - Generate control signals (e.g., ALU select, register write)
+  - **Data Memory**
+    - Load/store data
+    - Memory addressing
+  - **Bus System**
+    - Address, data, control buses
+    - Data transfer
+  - **Instruction Set Architecture (ISA)**
+    - Simple ISA (load, store, add, jump)
+    - Write basic assembly programs
+  - **Branching**
+    - Conditional jumps (e.g., jump if zero)
+    - Update PC for control flow
+    - Project: Add branching to CPU
+- ### 9. **CPU Enhancements: Early Advancements**
+  - **Multi-Cycle CPU**
+    - Fetch-decode-execute in multiple cycles
+    - Contrast with single-cycle
+  - **Interrupts**
+    - Handle hardware/software events
+    - Save/restore PC, registers
+  - **Memory Hierarchy**
+    - Cache basics (L1, hit/miss)
+    - Main memory interaction
+  - **Stack Operations**
+    - Push/pop for function calls
+    - Stack pointer, memory
+    - Project: Add interrupts, stack to CPU
+- ### 10. **CPU Enhancements: Pipelining**
+  - **Basic Pipelining**
+    - Fetch, decode, execute stages
+    - Increase throughput
+  - **Pipeline Hazards**
+    - Data hazards (read-after-write)
+    - Control hazards (branches)
+    - Structural hazards
+  - **Hazard Mitigation**
+    - Stalling, forwarding
+    - Project: Simulate 3-stage pipeline
+- ### 11. **CPU Enhancements: Modern Features**
+  - **Branch Prediction**
+    - Static prediction (always taken)
+    - Dynamic prediction (2-bit predictor)
+    - Branch target buffer (BTB)
+  - **Superscalar Architecture**
+    - Multiple instructions per cycle
+    - Parallel ALUs
+  - **Out-of-Order Execution**
+    - Reorder instructions
+    - Reorder buffer
+  - **Speculative Execution**
+    - Execute before branch resolution
+    - Rollback on misprediction
+  - **Cache Coherence**
+    - Multi-core memory consistency
+    - MESI protocol basics
+  - **Project**
+    - Add branch prediction
+    - Simulate superscalar execution
+- ### 12. **Advanced CPU Architectures**
+  - **RISC vs. CISC**
+    - ARM (RISC) vs. x86 (CISC)
+    - Trade-offs
+  - **Multi-Core CPUs**
+    - Shared/distributed memory
+    - Inter-core communication
+  - **Vector Processing**
+    - SIMD (Single Instruction, Multiple Data)
+    - Graphics/AI applications
+  - **Power Management**
+    - Dynamic voltage scaling
+    - Clock gating
+  - **Project**
+    - Simulate dual-core CPU
+    - Add SIMD instructions
+- ### 13. **Hands-On Learning**
+  - Tools: Logisim, Verilog, FPGA basics
+  - Projects:
+    - 4-bit adder, ALU, 8-bit Harvard CPU
+    - Add branching, interrupts, pipelining
+    - Simulate branch prediction, multi-core
+  - Applications: CPUs in AI (TPUs), mobile devices
+  - Debugging: testbenches, error detection
+- ### 14. **Circuits in Context**
+  - CPU-OS interaction (interrupts, privilege levels)
+  - Assembly programming for CPU testing
+  - Circuits in networking (routers)
+  - Role in systems: SoC, GPU basics

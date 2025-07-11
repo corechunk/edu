@@ -1,4 +1,7 @@
 # Education
+
+Welcome to the Education project! This repository is a curated collection of comprehensive yet easy-to-follow learning materials on a variety of subjects in STEM. Our goal is to provide clear, concise, and accessible content for students and self-learners.
+
 ## All contents:
 
 Note : White sub topics are unvailable. Only blue ones are available.

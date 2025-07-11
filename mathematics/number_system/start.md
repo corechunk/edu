@@ -28,6 +28,10 @@
         - [(Octal or Hexadecimal) to Binary](positional_ns/conv/special/octHexToBin.md)
         - [Binary to (Octal or Hexadecimal)](positional_ns/conv/special/binToOctHex.md)
         - [Why Hexadecimal and Octal Align with Binary](positional_ns/conv/special/why.md)
+    - [Binary Arithmetic](positional_ns/arithmetic.md)
+    - [1's & 2's compliment in binary [ Computer Science ] part-1](positional_ns/complimentp1.md)
+    - [signed & unsigned numbers [ Computer Science ]]
+    - [1's & 2's compliment in binary [ Computer Science ] part-2]
 
 </details>
 
@@ -101,5 +105,5 @@ Here “1” in ten’s place means different than in one's place.
 - [Conversion of Positional Number Systems](positional_ns/conversion.md)
 - [Binary Arithmetic](positional_ns/arithmetic.md)
 - [1's & 2's compliment in binary [ Computer Science ] part-1](positional_ns/complimentp1.md)
-- [signed & unsigned numbers [ Computer Science ]]()
-- [1's & 2's compliment in binary [ Computer Science ] part-2]()
+- [signed & unsigned numbers [ Computer Science ]]
+- [1's & 2's compliment in binary [ Computer Science ] part-2]

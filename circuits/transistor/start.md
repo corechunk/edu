@@ -129,9 +129,34 @@ Transistors typically have three terminals:
 - **Base** (or Gate for FETs)
 - **Collector** (or Drain for FETs)
 
+Note : electricity can flow between source and drain if the base/gate is ON. 
+
 Transistors can function as:
 - Amplifiers (increasing signal strength)
 - **Switches** (turning current on/off)
 
 Their invention revolutionized electronics, enabling the development of smaller, faster, and more reliable devices.
 
+---
+
+## Transistor as a Switch
+
+The most fundamental use of a transistor in digital electronics is as an incredibly fast electronic switch. This on/off capability is the basis for the binary code (0s and 1s) that computers use.
+
+`image` `image`
+
+### The "OFF" State (Logical 0)
+When there is no voltage applied to the **Gate**, the depletion layer between the **Source** and **Drain** remains intact, as we saw earlier. This layer acts as a barrier, preventing any current from flowing. The switch is considered **OFF**.
+
+- **Input:** 0V at the Gate
+- **Result:** No current flows
+- **Represents:** A logical **0**
+
+### The "ON" State (Logical 1)
+When a positive voltage is applied to the **Gate**, its electric field creates a conductive channel between the **Source** and **Drain**, overcoming the depletion layer. This allows current to flow freely. The switch is now **ON**.
+
+- **Input:** Positive voltage at the Gate
+- **Result:** Current flows
+- **Represents:** A logical **1**
+
+By rapidly turning this switch on and off, we can create the digital signals that power all modern computing. Combining these simple switches allows us to build logic gates, which are the next step in our journey!
