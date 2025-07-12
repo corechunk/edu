@@ -11,7 +11,7 @@ By arranging transistors in specific configurations, we can create circuits that
 ## Fundamental Logic Gates
 These are the most basic building blocks of digital logic.
 
-- AND Gate
+- [AND Gate](and/start.md)
 - OR Gate
 - NOT Gate (Inverter)
 
