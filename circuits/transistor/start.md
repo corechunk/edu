@@ -129,6 +129,7 @@ Transistors typically have three terminals:
 - **Base** (or Gate for FETs)
 - **Collector** (or Drain for FETs)
 
+![](transistor.jpg)
 Note : electricity can flow between source and drain if the base/gate is ON. 
 
 Transistors can function as:
@@ -143,7 +144,10 @@ Their invention revolutionized electronics, enabling the development of smaller,
 
 The most fundamental use of a transistor in digital electronics is as an incredibly fast electronic switch. This on/off capability is the basis for the binary code (0s and 1s) that computers use.
 
-`image` `image`
+<div style="display: flex; gap: 10px; width: 100%;">
+  <img src="transistor_off.jpg" alt="Silicon crystal" style="width: 500px; object-fit: contain;"/>
+  <img src="transistor_on.jpg" alt="Silicon sample" style="width: 500px; object-fit: contain;"/>
+</div>
 
 ### The "OFF" State (Logical 0)
 When there is no voltage applied to the **Gate**, the depletion layer between the **Source** and **Drain** remains intact, as we saw earlier. This layer acts as a barrier, preventing any current from flowing. The switch is considered **OFF**.
