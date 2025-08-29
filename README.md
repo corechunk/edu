@@ -6,6 +6,21 @@ Welcome to the Education project! This repository is a curated collection of com
 
 Note : White sub topics are unvailable. Only blue ones are available.
 
+- Technologia
+  - [Programming](Technology/programming/start.md)
+  - Operating System
+    - Flavours
+      - Linux
+      - Windows
+      - MacOS
+    - Kernel
+    - Shell
+  - Computer Networking
+  - Data Science and Analytics
+  - Cybersecurity
+  - Cloud Computing
+  - Embedded Systems
+
 - Mathematics
   - [Number System](mathematics/number_system/start.md)
   - Set Theory & Logic
